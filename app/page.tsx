@@ -3,11 +3,15 @@ import Link from "next/link"
 export default function HomePage() {
   return (
     <div className="flex flex-col items-center justify-center h-screen">
-      <h1 className="text-3xl font-bold mb-4">Buyer Leads CRM</h1>
-      <p className="mb-6">Manage and track buyer leads easily.</p>
+      <h1>
+        Buyer Lead Intake App
+      </h1>
+      <p className="mb-20 text-xl max-w-md text-center tracking-widest">
+        Effortless lead intake and management for real estate buyers.
+      </p>
       <Link href="/buyers">
-        <button className="bg-blue-600 text-white px-6 py-3 rounded">
-          View Buyers
+        <button>
+          Login
         </button>
       </Link>
     </div>

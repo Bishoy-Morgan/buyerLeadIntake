@@ -29,11 +29,17 @@ export default function BuyersPage() {
   // }, [])
 
   return (
-    <div className="p-6">
-      <h1 className="text-2xl font-bold mb-4">Buyers</h1>
+    <div className="flex flex-col items-center pt-32">
 
       {/* Add Buyer Form */}
-      <AddBuyerForm onSuccess={fetchBuyers} />
+      <div className="w-4/5 flex items-start justify-between gap-x-6 ">
+        <h2 className="w-1/2 ">
+          Capture New Buyer Details and Manage Existing Leads
+        </h2>
+        <div className="w-2/5">
+          <AddBuyerForm onSuccess={fetchBuyers} />
+        </div>
+      </div>
 
       {/* Buyers Table */}
       {loading ? (
